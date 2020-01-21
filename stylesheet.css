@@ -1,0 +1,46 @@
+
+body {
+  font-family: Helvetica;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 24pt;
+}
+
+textarea, input {
+  width: calc(100% - 20px - 2px);
+  padding: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  font-family: monospace;
+}
+textarea:focus, input:focus, button:focus {
+  outline: none;
+  border: 1px solid rgb(50, 50, 50);
+}
+textarea, input, button {
+  background-color: rgb(255, 255, 255);
+  margin: 5px 0px;
+}
+textarea {
+  height: 200px;
+}
+button {
+  padding: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgb(240, 240, 240);
+}
+p, textarea, input, button {
+  font-size: 16pt;
+}
+
+@media (min-width: 992px) { /* Desktop+ */
+  body {
+    margin: 50px 25%;
+  }
+}
