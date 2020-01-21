@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BF Interpreter</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <h1>BF Interpreter</h1>
+    <p>You can either enter your input now, or leave this empty and enter the inputs one at a time into prompts after running your code.</p>
+    <input id="input" type="text" placeholder="Input (optional)">
+    <textarea id="code" placeholder="Code"></textarea>
+    <input id="delay" type="number" placeholder="Delay (optional)">
+    <button id="run" onclick="run()">Run Code</button>
+    <button id="runDebug" onclick="run(true)">Run Debug</button>
+    <button id="stop" onclick="stop()">Stop Code</button>
+    <div id="time"></div>
+    <textarea id="output" placeholder="Output" disabled></textarea>
+    <script src="javascript.js"></script>
+  </body>
+</html>
